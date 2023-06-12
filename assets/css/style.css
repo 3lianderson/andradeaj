@@ -406,9 +406,9 @@ p.downloads a:hover {
 	max-height: 0;
 	overflow: hidden;
 	background: #1abc9c;
-	-webkit-transition: max-height 100%;
-	-o-transition: max-height 100%;
-	transition: max-height 100%;
+	-webkit-transition: max-height 1s;
+	-o-transition: max-height 1s;
+	transition: max-height 1s;
 }
 .accordion-content {
 	background: white;
@@ -420,7 +420,7 @@ p.downloads a:hover {
 
 /* :checked */
 .accordion input:checked ~ .accordion-content {
-	max-height: 20em;
+	max-height: 100%;
 }
 
 /* Tab Icon */
