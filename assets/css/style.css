@@ -236,6 +236,10 @@ CSS de Áreas Específicas
     font-size: 15px;
 }
 
+.default.dark P {
+    color: #FFF;
+}
+
 p.downloads a {
     text-decoration: none;
 }
