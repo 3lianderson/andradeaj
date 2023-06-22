@@ -240,6 +240,9 @@ CSS de Áreas Específicas
     color: #FFF;
 }
 
+.default.dark p.process{
+    color:#555;
+}
 p.downloads a {
     text-decoration: none;
 }
