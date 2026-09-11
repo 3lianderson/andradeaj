@@ -2,15 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="https://andradeaj.s3.amazonaws.com/assets/media/andradelogo.jpg">
     <title> Andrade AJ - Empresa especializada na Administração Judicial de Empresas em Recuperação Judicial e Falências, e serviços especializados na área de insolvência. </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script src="assets/js/script.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 <header>
@@ -18,10 +18,15 @@
         <div class="logo">
             <div class="logoimg"><img width="180px" height="80px" src="https://andradeaj.s3.amazonaws.com/assets/media/andradelogo.jpg"/></div>
         </div>
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+        <label for="mobile-menu-toggle" class="hamburger" aria-label="Abrir ou fechar menu">
+            <img src="https://andradeaj.s3.amazonaws.com/assets/images/menu.png"/>
+        </label>
+        <label for="mobile-menu-toggle" class="menu-overlay" aria-hidden="true"></label>
         <div class="menu">
             <nav>
                 <ul>
-                    <li class="active"><a href="">Inicio</a></li>
+                    <li class="active"><a href="home.html">Inicio</a></li>
                     <li><a href="#section1" class="page-scroll">Quem Somos</a></li>
                     <li><a href="#section2" class="page-scroll">Falência</a></li>
                     <li><a href="#section3" class="page-scroll">Recuperação Judicial</a></li>
@@ -33,49 +38,41 @@
                     <li><a href="#section6" class="page-scroll">Contato</a></li>
                 </ul>
             </nav>
-        </div> 
+        </div>
     </div>
 </header>
 <main>
     <section class="banner">
         <div class="sliders">
-            <div class="sliders">
-                <div class="slide">
-                    <div class="slidearea">
-                        <h1>Serviços de  Administração Judicial</h1>
-                        <h2>Recuperação Judicial</h2>
-                        <h2><span>e Falência</span></h2>
-                        <!--<a href=""> Conheça!</a>-->
-                    </div>
-                </div>
-                <div class="slide">
-                    ...2
-                </div>
-                <div class="slide">
-                    ...3
+            <div class="slide">
+                <div class="slidearea">
+                    <h1>Serviços de  Administração Judicial</h1>
+                    <h2>Recuperação Judicial</h2>
+                    <h2><span>e Falência</span></h2>
+                    <!--<a href=""> Conheça!</a>-->
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="default light" id="section1"> 
-        <div class="section-title"><br><br>Sobre nós</div>
+    <section class="default light" id="section1">
+        <div class="section-title">Sobre nós</div>
         <div class="section-desc">Andrade Administração Judicial</div>
         <div class="section-body">
             <p> A Andrade Administração Judicial é uma empresa especializada no segmento da Administração Judicial em processos de Falência, Concordata e Recuperação Judicial, regidas pela atual Lei 11.101/2005 e pelo Decreto-Lei nº 7.661/45. </p>
 
-            <p>Sua gestora com quase 10 anos de atuação profissional no mercado, e em constante aperfeiçoamento acadêmico, visando aprimorar sua prestação de serviço ao Poder Judiciário, atendendo às novas tendências do cenário socioeconômico e jurídico, vem reformular sua proposta de gestão no âmbito da insolvência, por meio da Andrade Administração Judicial.</p>
+            <p>Sua gestora, Silvana Cláudia Silva Andrade Almeida, com quase 10 anos de atuação profissional no mercado, e em constante aperfeiçoamento acadêmico, visando aprimorar sua prestação de serviço ao Poder Judiciário, atendendo às novas tendências do cenário socioeconômico e jurídico, vem reformular sua proposta de gestão no âmbito da insolvência, por meio da Andrade Administração Judicial.</p>
 
             <p>Com vasta experiência na análise de pedido de habilitação, divergência e impugnação de Créditos concursais e extraconcursais, consolidação do Quadro Geral de Credores, arrecadação de bens, realização do ativo, realização de Assembleia de Credores, relatórios de atividades do devedor, patrocínio da defesa dos interesses da Massa falida nos diversos segmentos, dentre outros, a Andrade Administração Judicial é um empresa especializada para auxiliar o Poder Judiciário na condução dos processos de insolvência, visando a satisfação dos interesses da expropriação concursal.</p>
         </div>
     </section>
 
     <section class="default dark" id="section2"> 
-        <div class="section-title" ><br><br>Falência</div>
+        <div class="section-title">Falência</div>
         <div class="section-desc">O processo de falência é o instrumento pelo qual o devedor tem seu patrimônio liquidado com vistas à satisfação dos interesses da expropriação concursal, <br> observada a ordem prioritária estabelecida no art. 83 da Lei 11.101/2005.</div>
         <div class="section-body">
             <div class="accordion">
-                <input id="tab-one" type="radio" name="tabs">
+                <input id="tab-one" type="checkbox">
                 <label for="tab-one">BIBI DOCES E SALGADOS LTDA</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0266370-34.2020.8.06.0001 <br>
@@ -85,7 +82,6 @@
                         Nomeação do AJ: 07/01/2021 <br>
                         Status: em Andamento
                         <br> 
-                        <br>
                         <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/BIBI+DOCES+E+SALGADOS+LTDA/BIBI-Sentenca-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; BIBI - Sentença de Falência</a></p>
                         <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/BIBI+DOCES+E+SALGADOS+LTDA/BIBI-Termo-AJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; BIBI - Termo AJ</a></p>
                         <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/BIBI+DOCES+E+SALGADOS+LTDA/BIBI-Edital-da-Decretacao-da-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; BIBI - Edital de decretação da Falência</a></p>
@@ -94,7 +90,7 @@
                 </div>
             </div>
             <div class="accordion">
-                <input id="tab-two" type="radio" name="tabs">
+                <input id="tab-two" type="checkbox">
                 <label for="tab-two">CAVALCANTE COMERCIO E REPRESENTAÇÃO DE ALIMENTOS EIRELI</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0010060-31.2019.8.06.0064 <br>
@@ -115,7 +111,7 @@
             </div>
 
             <div class="accordion">
-                <input id="tab-three" type="radio" name="tabs">
+                <input id="tab-three" type="checkbox">
                 <label for="tab-three">CAVALCANTE COMERCIO E REPRESENTAÇÃO DE ALIMENTOS EIRELI 2</label>
                 <div class="accordion-content">
                     <p class="process">Processo:0190434-42.2016.8.06.0001<br>
@@ -135,7 +131,7 @@
             </div>
 
             <div class="accordion">
-                <input id="tab-four" type="radio" name="tabs">
+                <input id="tab-four" type="checkbox">
                 <label for="tab-four">DANIDAY SUPERMERCADOS LTDA</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0904138-52.2014.8.06.0001 <br>
@@ -152,7 +148,7 @@
             </div>
 
             <div class="accordion">
-                <input id="tab-five" type="radio" name="tabs">
+                <input id="tab-five" type="checkbox">
                 <label for="tab-five">DISTRIBUIDORA ACARAUENSE DE MATERIAL DE CONSTRUÇÃO LTDA</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0246069-67.2000.8.06.0001<br>
@@ -171,7 +167,7 @@
             </div>
             
             <div class="accordion">
-                <input id="tab-six" type="radio" name="tabs">
+                <input id="tab-six" type="checkbox">
                 <label for="tab-six">F.G.M. INDÚSTRIA E COMÉRCIO DE CONFECÇÕES LTDA - ME</label>
                 <div class="accordion-content">
                     <p class="process">Processo:  0162129-48.2016.8.06.0001<br>
@@ -188,7 +184,7 @@
             </div>
 
             <div class="accordion">
-                <input id="tab-seven" type="radio" name="tabs">
+                <input id="tab-seven" type="checkbox">
                 <label for="tab-seven">ILDA DISTRIBUIDORA DE ALIMENTOS</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0415467-60.2010.8.06.0001<br>
@@ -207,7 +203,7 @@
             </div>
 
             <div class="accordion">
-                <input id="tab-eight" type="radio" name="tabs">
+                <input id="tab-eight" type="checkbox">
                 <label for="tab-eight">INTERSYSTEM COMÉRCIO E SERVIÇOS DE INFORMÁTICA LTDA</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0195997-51.2015.8.06.0001 <br>
@@ -226,7 +222,7 @@
             </div>
 
             <div class="accordion">
-                <input id="tab-nine" type="radio" name="tabs">
+                <input id="tab-nine" type="checkbox">
                 <label for="tab-nine">MERCANTIL ACARAÚ - INDÚSTRIA E COMÉRCIO LTDA</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0385471-66.2000.8.06.0001 <br>
@@ -245,7 +241,7 @@
             </div>
 
             <div class="accordion">
-                <input id="tab-ten" type="radio" name="tabs">
+                <input id="tab-ten" type="checkbox">
                 <label for="tab-ten">OGP CLÍNICA ODONTOLÓGICA LTDA</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0049807-27.2012.8.06.0001 <br>
@@ -262,7 +258,7 @@
             </div>
 
             <div class="accordion">
-                <input id="tab-eleven" type="radio" name="tabs">
+                <input id="tab-eleven" type="checkbox">
                 <label for="tab-eleven">PORTAL DA BARRA SUPERMERCADOS LTDA</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0142042-76.2013.8.06.0001 <br>
@@ -283,7 +279,7 @@
             </div>
 
             <div class="accordion">
-                <input id="tab-twelve" type="radio" name="tabs">
+                <input id="tab-twelve" type="checkbox">
                 <label for="tab-twelve">RED FISH COMERCIO DE ALIMENTOS LTDA - ME</label>
                 <div class="accordion-content">
                     <p class="process">Processo: 0394628-14.2010.8.06.0001 <br>
@@ -299,33 +295,34 @@
                         <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/RED+FISH+COMERCIO+DE+ALIMENTOS+LTDA+-+ME/RED-Encerramento-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Encerramento Falência </a></p>
                         </p>
                 </div>
+            </div>
 
-                <div class="accordion">
-                    <input id="tab-thirteen" type="radio" name="tabs">
-                    <label for="tab-thirteen">TRANSPORTADORA VASCONCELOS LTDA</label>
-                    <div class="accordion-content">
-                        <p class="process">Processo: 0105508-31.2016.8.06.0001 <br>
-                            Juízo: 2ª Vara de Recuperação de Empresas e Falências de Fortaleza/CE <br>
-                            Data do pedido de falência: 11/01/2016 <br>
-                            Data da Decretação da Falência: 06/02/2017 <br>
-                            Nomeação do AJ: 06/02/2017 <br>
-                            Revogação da Decretação da Falência: 22/02/2017 <br>
-                            Anulação da Sentença revogatória da decretação da falência: 14/10/2020 <br>
-                            Status: em Andamento
-                            <br> 
-                            <br>
-                            <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Sentenca-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Sentença de Falência </a></p>
-                            <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Termo-AJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Termo de Compromisso</a></p>
-                            <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Revogacao-da-Decretacao-da-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Revogação da Decretação da Falência </a></p>
-                            <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Edital-de-Encerramento-da-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Edital de Encerramento da Falência </a></p>
-                            <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Anulacao-da-Sentenca-revogatoria-da-decretacao-da-falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Anulação da Sentença revogatória da decretação da Falência</a></p>
-                            </p>
-                    </div>
+            <div class="accordion">
+                <input id="tab-thirteen" type="checkbox">
+                <label for="tab-thirteen">TRANSPORTADORA VASCONCELOS LTDA</label>
+                <div class="accordion-content">
+                    <p class="process">Processo: 0105508-31.2016.8.06.0001 <br>
+                        Juízo: 2ª Vara de Recuperação de Empresas e Falências de Fortaleza/CE <br>
+                        Data do pedido de falência: 11/01/2016 <br>
+                        Data da Decretação da Falência: 06/02/2017 <br>
+                        Nomeação do AJ: 06/02/2017 <br>
+                        Revogação da Decretação da Falência: 22/02/2017 <br>
+                        Anulação da Sentença revogatória da decretação da falência: 14/10/2020 <br>
+                        Status: em Andamento
+                        <br>
+                        <br>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Sentenca-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Sentença de Falência </a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Termo-AJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Termo de Compromisso</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Revogacao-da-Decretacao-da-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Revogação da Decretação da Falência </a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Edital-de-Encerramento-da-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Edital de Encerramento da Falência </a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Fal%C3%AAncia/TRANSPORTADORA+VASCONCELOS+LTDA/VASCONCELOS-Anulacao-da-Sentenca-revogatoria-da-decretacao-da-falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Anulação da Sentença revogatória da decretação da Falência</a></p>
+                        </p>
                 </div>
+            </div>
 
             <!--Accordion Layout
             <div class="accordion">
-                <input id="tab-next" type="radio" name="tabs">
+                <input id="tab-next" type="checkbox">
                 <label for="tab-next">NAME</label>
                 <div class="accordion-content">
                     <p class="process">Process <br>
@@ -345,8 +342,6 @@
                 </div>
             </div>
             -->
-
-
 
           <!--<div class="section-services">
                 <div class="section-service">
@@ -374,42 +369,96 @@
     </section>
 
     <section class="default light" id="section3"> 
-        <div class="section-title" ><br><br>Recuperação Judicial</div>
+        <div class="section-title">Recuperação Judicial</div>
         <div class="section-desc">O processo de recuperação judicial é um mecanismo de reestruturação financeira, econômica e administrativa do devedor, objetivando a manutenção da atividade empresarial viável no mercado.</div>
         <div class="section-body">
             <div class="accordion">
-                <input id="tab-ninety" type="radio" name="tabs">
-                <label for="tab-ninety">GRUPO BRASILEIRO</label>
+                <input id="tab-ninety" type="checkbox">
+                <label for="tab-ninety">CAVALCANTE COMÉRCIO E REPRESENTAÇÃO DE ALIMENTOS EIRELI</label>
                 <div class="accordion-content">
-                    <p>Processo: 0266370-34.2020.8.06.0001 <br>
+                    <p class="process">Processo: 0190434-42.2016.8.06.0001 <br>
                         Juízo: 2ª Vara de Recuperação de Empresas e Falências de Fortaleza/CE <br>
-                        Data do pedido de RJ: 19/11/2020 <br>
-                        Data do Pedido de Autofalência: 07/01/2021 <br>
-                        Nomeação do AJ: 07/01/2021 <br>
-                        Status: em Andamento
-                        <br> 
+                        Data do pedido de RJ: 09/12/2016  <br>
+                        Data do processamento da RJ:  15/12/2016  <br>
+                        Nomeação do AJ: 15/12/2016 <br>
+                        Aprovação do PRJ pela AGC: 29/01/2018 <br>
+                        Concessão da Recuperação Judicial: 16/02/2018 <br>
+                        Encerramento da Recuperação Judicial: 03/12/2020 <br>
+                        Status: Encerrado
                         <br>
-                        <p class="downloads"><a target="_blank" href="https://andradeaj.com.br/wp-content/uploads/2021/06/BIBI-Sentenca-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; BIBI Sentença de Falência</a></p>
+                        <br>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/CAVALCANTE+COM%C3%89RCIO+E+REPRESENTA%C3%87%C3%83O+DE+ALIMENTOS+EIRELI/CCR-Termo-de-Compromisso.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Termo de Compromisso</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/CAVALCANTE+COM%C3%89RCIO+E+REPRESENTA%C3%87%C3%83O+DE+ALIMENTOS+EIRELI/CCR-Convola-RJ-em-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Convola RJ em Falencia</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/CAVALCANTE+COM%C3%89RCIO+E+REPRESENTA%C3%87%C3%83O+DE+ALIMENTOS+EIRELI/CCR-Decisao-Concede-RJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Decisao Concede RJ</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/CAVALCANTE+COM%C3%89RCIO+E+REPRESENTA%C3%87%C3%83O+DE+ALIMENTOS+EIRELI/CCR-Edital-QGC-1.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Edital QGC 1</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/CAVALCANTE+COM%C3%89RCIO+E+REPRESENTA%C3%87%C3%83O+DE+ALIMENTOS+EIRELI/CCR-Processa-RJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Processa RJ</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/CAVALCANTE+COM%C3%89RCIO+E+REPRESENTA%C3%87%C3%83O+DE+ALIMENTOS+EIRELI/CCR-Sentenca-Encerramento-RJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Sentença Encerramento RJ</a></p>
                         </p>
                 </div>
             </div>
 
+            <!-- TODO: preencher os dados do processo (Processo/Juízo/Datas/Status) abaixo -->
             <div class="accordion">
-                <input id="tab-one-hundred" type="radio" name="tabs">
-                <label for="tab-one-hundred">CAVALCANTE COMÉRCIO E REPRESENTAÇÃO DE ALIMENTOS EIRELI 2</label>
+                <input id="tab-ninety-one" type="checkbox">
+                <label for="tab-ninety-one">GRUPO BRASILEIRO</label>
                 <div class="accordion-content">
-                    <!--<p>Processo: 0266370-34.2020.8.06.0001 <br>
-                        Juízo: 2ª Vara de Recuperação de Empresas e Falências de Fortaleza/CE <br>
-                        Data do pedido de RJ: 19/11/2020 <br>
-                        Data do Pedido de Autofalência: 07/01/2021 <br>
-                        Nomeação do AJ: 07/01/2021 <br>
-                        Status: em Andamento
-                        <br> 
+                    <p class="process">Processo: [preencher número do processo] <br>
+                        Juízo: [preencher] <br>
+                        Data do pedido de RJ: [preencher] <br>
+                        Status: [preencher]
                         <br>
-                        <p class="downloads"><a target="_blank" href="https://andradeaj.com.br/wp-content/uploads/2021/06/BIBI-Sentenca-Falencia.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; BIBI Sentença de Falência</a></p>
-                        </p> -->
+                        <br>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/GRUPO+BRASILEIRO/1-BRASILEIRO-Decisao-defere-o-processamento-da-RJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Decisão que Defere o Processamento da RJ</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/GRUPO+BRASILEIRO/2-Termo-de-Compromisso-AJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Termo de Compromisso do AJ</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/GRUPO+BRASILEIRO/3-Edital-Relacao-de-Credores.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Edital - Relação de Credores</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/GRUPO+BRASILEIRO/BR0105_NFs_Recibos_Banco_Abril_2023+%281%29.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Relatório Mensal de Atividades - Abril/2023</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/GRUPO+BRASILEIRO/Decis%C3%A3o+Extin%C3%A7%C3%A3o+sem+resolu%C3%A7%C3%A3o+de+m%C3%A9rito.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Decisão - Extinção sem Resolução de Mérito</a></p>
+                        </p>
                 </div>
             </div>
+
+            <!-- TODO: preencher os dados do processo (Processo/Juízo/Datas/Status) abaixo -->
+            <div class="accordion">
+                <input id="tab-ninety-two" type="checkbox">
+                <label for="tab-ninety-two">MUNDIAL COMÉRCIO DE MÓVEIS</label>
+                <div class="accordion-content">
+                    <p class="process">Processo: [preencher número do processo] <br>
+                        Juízo: [preencher] <br>
+                        Data do pedido de RJ: [preencher] <br>
+                        Status: [preencher]
+                        <br>
+                        <br>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/MUNDIAL+COM%C3%89RCIO+DE+M%C3%93VEIS/Mundial-Processa-RJ-1.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Processamento da RJ</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/MUNDIAL+COM%C3%89RCIO+DE+M%C3%93VEIS/Mundial-Nomeacao-AJ-1.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Nomeação do AJ</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/MUNDIAL+COM%C3%89RCIO+DE+M%C3%93VEIS/Mundial-Termo-de-Compromisso-AJ-1.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Termo de Compromisso do AJ</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/MUNDIAL+COM%C3%89RCIO+DE+M%C3%93VEIS/Edital-QGC.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Edital QGC</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/MUNDIAL+COM%C3%89RCIO+DE+M%C3%93VEIS/Edital-QGC-1%C2%B0-Aditivo.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Edital QGC - 1º Aditivo</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/MUNDIAL+COM%C3%89RCIO+DE+M%C3%93VEIS/MUNDIAL-Concessao-da-Recuperacao-Judicial.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Concessão da Recuperação Judicial</a></p>
+                        </p>
+                </div>
+            </div>
+
+            <!-- TODO: preencher os dados do processo (Processo/Juízo/Datas/Status) abaixo -->
+            <div class="accordion">
+                <input id="tab-ninety-three" type="checkbox">
+                <label for="tab-ninety-three">UNIÃO DE EDUCAÇÃO E CULTURA VALE DO JAGUARIBE LTDA</label>
+                <div class="accordion-content">
+                    <p class="process">Processo: [preencher número do processo] <br>
+                        Juízo: [preencher] <br>
+                        Data do pedido de RJ: [preencher] <br>
+                        Status: [preencher]
+                        <br>
+                        <br>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/UNI%C3%83O+DE+EDUCA%C3%87%C3%83O+E+CULTURA+VALE+DO+JAGUARIBE+LTDA/Decis%C3%A3o+Processamento+RJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Decisão - Processamento da RJ</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/UNI%C3%83O+DE+EDUCA%C3%87%C3%83O+E+CULTURA+VALE+DO+JAGUARIBE+LTDA/Edital+Lista+de+Credores+Recuperanda.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Edital - Lista de Credores da Recuperanda</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/UNI%C3%83O+DE+EDUCA%C3%87%C3%83O+E+CULTURA+VALE+DO+JAGUARIBE+LTDA/Edital+Rela%C3%A7%C3%A3o+de+Credores+AJ.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Edital - Relação de Credores do AJ</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/UNI%C3%83O+DE+EDUCA%C3%87%C3%83O+E+CULTURA+VALE+DO+JAGUARIBE+LTDA/Unijaguaribe+-+RMA+2022+12.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Relatório Mensal de Atividades - Dez/2022</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/UNI%C3%83O+DE+EDUCA%C3%87%C3%83O+E+CULTURA+VALE+DO+JAGUARIBE+LTDA/Unijaguaribe+-+RMA+2023+01.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Relatório Mensal de Atividades - Jan/2023</a></p>
+                        <p class="downloads"><a target="_blank" href="https://andradeaj.s3.amazonaws.com/assets/documents/Recupera%C3%A7%C3%A3o+Judicial/UNI%C3%83O+DE+EDUCA%C3%87%C3%83O+E+CULTURA+VALE+DO+JAGUARIBE+LTDA/Unijaguaribe+-+RMA+2023+02.pdf"><img src="https://andradeaj.s3.amazonaws.com/assets/images/icone_pdf.png"/> &nbsp; &nbsp; Relatório Mensal de Atividades - Fev/2023</a></p>
+                        </p>
+                </div>
+            </div>
+
           <!--<div class="section-services">
                 <div class="section-service">
                     <img src="assets/images/medalha.png" />
@@ -435,9 +484,8 @@
         </div>
     </section>
 
-
         <section class="default dark" id="section4"> 
-            <div class="section-title" ><br><br>Credores</div>
+            <div class="section-title">Credores</div>
             <div class="section-desc">Para os procedimentos administrativos de Habilitação e/ou Divergência de Crédito, a parte interessada <br> deverá observar os requisitos do art. 9º da Lei Federal nº 11.101/2005, no prazo especificado no Edital vinculado ao processo de seu interesse.</div>
             <div class="section-body">
              <p>
@@ -453,35 +501,83 @@
              <p>
                 Parágrafo único. Os títulos e documentos que legitimam os créditos deverão ser exibidos no original ou por cópias autenticadas se estiverem juntados em outro processo.
              </p>
-             <!-- DOCUMENTO PARA DOWNLOAD AQUI-->
-             <p>
-                A título de auxílio, disponibilizamos o seguinte Modelo de Modelo de Habilitação – Divergência Administrativa de Crédito.docx.
+             <!-- TODO: subir o arquivo do modelo em assets/documents/ e apontar o link abaixo para ele -->
+             <p class="downloads">
+                A título de auxílio, disponibilizamos o seguinte <a target="_blank" href="assets/documents/Modelo-Habilitacao-Divergencia-Administrativa-de-Credito.docx"><img src="assets/images/icone_pdf.png"/> &nbsp; &nbsp; Modelo de Habilitação – Divergência Administrativa de Crédito</a>.
              </p>
-             <P>
-                Em caso de dúvidas, entre em contato conosco.
-             </P>
+             <p>
+                Em caso de dúvidas, <a href="#section6" class="page-scroll">entre em contato conosco</a>.
+             </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="default light"> 
+    <section class="default light" id="section5">
         <div class="section-title">Links Úteis</div>
-        <div class="section-desc"> - </div>
+        <div class="section-desc">Sites e serviços oficiais de referência para credores, devedores e demais interessados nos processos.</div>
         <div class="section-body">
- 
-        
+            <p class="downloads"><a target="_blank" href="https://www.cnj.jus.br"><img src="assets/images/logo-cnj.jpg"/> &nbsp; &nbsp; CNJ - Conselho Nacional de Justiça</a></p>
+            <p class="downloads"><a target="_blank" href="https://www.tjce.jus.br"><img src="assets/images/logo-tjce.png"/> &nbsp; &nbsp; TJCE - Tribunal de Justiça do Estado do Ceará</a></p>
+            <p class="downloads"><a target="_blank" href="https://www.tjce.jus.br/diario-da-justica/"><img src="assets/images/logo-tjce.png"/> &nbsp; &nbsp; Diário da Justiça Eletrônico do TJCE</a></p>
+            <p class="downloads"><a target="_blank" href="http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11101.htm"><img src="assets/images/brasao-brasil.svg"/> &nbsp; &nbsp; Lei 11.101/2005 - Lei de Recuperação Judicial e Falência</a></p>
+            <!-- TODO: quando publicar, subir logo-cnj.jpg, logo-tjce.png e brasao-brasil.svg (em assets/images/) para o bucket S3 -->
+            <!-- TODO: adicionar outros links úteis relevantes -->
         </div>
     </section>
 
-    <section class="default light"> 
+    <section class="default light" id="section6">
         <div class="section-title">Fale Conosco</div>
-        <div class="section-desc"> - </div>
-        <div class="section-body">
- 
-        
+        <div class="section-desc">Entre em contato com a Andrade Administração Judicial.</div>
+        <div class="section-body contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-item-text">
+                        <h4>Endereço</h4>
+                        <span>Avenida Dom Luís, 300, Loja 210, Aldeota<br>Fortaleza/CE - CEP: 60.160-196</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-item-text">
+                        <h4>Telefone</h4>
+                        <span><a href="tel:+5585987489954">(85) 98748-9954</a></span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="far fa-envelope"></i>
+                    <div class="contact-item-text">
+                        <h4>E-mail</h4>
+                        <span><a href="mailto:silvanaandradeaj@gmail.com">silvanaandradeaj@gmail.com</a></span>
+                    </div>
+                </div>
+                <iframe title="Localização" src="https://maps.google.com/maps?q=Avenida%20Dom%20Lu%C3%ADs%2C%20300%2C%20Loja%20210%2C%20Aldeota%2C%20Fortaleza%20-%20CE&t=&z=16&output=embed" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Formulário via mailto: (sem backend). Para receber as mensagens de forma mais confiável
+                 (sem depender do cliente de e-mail do visitante), considere trocar por um serviço como
+                 o Formspree (formspree.io, grátis): basta criar uma conta e substituir o "action" abaixo
+                 pelo endpoint fornecido, ex: action="https://formspree.io/f/xxxxxxxx" method="POST" -->
+            <form class="contact-form" action="mailto:silvanaandradeaj@gmail.com" method="post" enctype="text/plain">
+                <div class="form-row">
+                    <label for="contact-name">Nome</label>
+                    <input type="text" id="contact-name" name="Nome" required>
+                </div>
+                <div class="form-row">
+                    <label for="contact-email">E-mail</label>
+                    <input type="email" id="contact-email" name="E-mail" required>
+                </div>
+                <div class="form-row">
+                    <label for="contact-phone">Telefone</label>
+                    <input type="tel" id="contact-phone" name="Telefone">
+                </div>
+                <div class="form-row">
+                    <label for="contact-message">Mensagem</label>
+                    <textarea id="contact-message" name="Mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Enviar mensagem</button>
+            </form>
         </div>
     </section>
-
 
 </main>
 <footer>
@@ -490,14 +586,14 @@
 
             <footer class="footer-section">
                 <div class="container">
-                    <!--<div class="footer-cta pt-5 pb-5">
+                    <div class="footer-cta pt-5 pb-5">
                         <div class="row">
                             <div class="col-xl-4 col-md-4 mb-30">
                                 <div class="single-cta">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <div class="cta-text">
-                                        <h4>Find us</h4>
-                                        <span>1010 Avenue, sw 54321, chandigarh</span>
+                                        <h4>Endereço</h4>
+                                        <span>Av. Dom Luís, 300, Loja 210, Aldeota, Fortaleza - CE</span>
                                     </div>
                                 </div>
                             </div>
@@ -505,8 +601,8 @@
                                 <div class="single-cta">
                                     <i class="fas fa-phone"></i>
                                     <div class="cta-text">
-                                        <h4>Call us</h4>
-                                        <span>9876543210 0</span>
+                                        <h4>Telefone</h4>
+                                        <span><a href="tel:+5585987489954">(85) 98748-9954</a></span>
                                     </div>
                                 </div>
                             </div>
@@ -514,75 +610,60 @@
                                 <div class="single-cta">
                                     <i class="far fa-envelope-open"></i>
                                     <div class="cta-text">
-                                        <h4>Mail us</h4>
-                                        <span>mail@info.com</span>
+                                        <h4>E-mail</h4>
+                                        <span><a href="mailto:silvanaandradeaj@gmail.com">silvanaandradeaj@gmail.com</a></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>-->
+                    </div>
                     <div class="footer-content pt-5 pb-5">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 mb-50">
                                 <div class="footer-widget">
                                     <div class="footer-logo">
-                                        <a href="index.html"><img src="https://andradeaj.com.br/wp-content/uploads/2020/09/andrade-removebg-preview-1.png" class="img-fluid" alt="logo"></a>
+                                        <!-- TODO: quando publicar, subir andradelogo2-light.png (em assets/media/) para o bucket S3 -->
+                                        <a href="home.html"><img src="assets/media/andradelogo2-light.png" class="img-fluid" alt="logo"></a>
                                     </div>
-                                    <!--<div class="footer-text">
-                                        <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                        elit,Lorem ipsum dolor sit amet.</p>
+                                    <div class="footer-text">
+                                        <p>Empresa especializada na Administração Judicial de processos de Recuperação Judicial e Falência, regidos pela Lei 11.101/2005.</p>
                                     </div>
-                                    <div class="footer-social-icon">
-                                        <span>Follow us</span>
+                                    <!-- TODO: substituir os "#" pelos perfis reais das redes sociais, quando existirem -->
+                                    <!--<div class="footer-social-icon">
+                                        <span>Siga-nos</span>
                                         <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                        <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                        <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                        <a href="#"><i class="fab fa-instagram google-bg"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in twitter-bg"></i></a>
                                     </div>-->
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                                 <div class="footer-widget">
                                     <div class="footer-widget-heading">
-
-                                    
                                             <h3>Nosso Endereço</h3>
                                     </div>
 
                                     <div class="footer-text mb-25">
-                                        <p>Avenida Shopping & Office
-                                            Avenida Dom Luís, nº 300, Sala 339,
-                                            Mezanino, Aldeota CEP: 60.160-196
+                                        <p>Avenida Dom Luís, 300, Loja 210, Aldeota<br>
+                                            CEP: 60.160-196<br>
                                             Fortaleza - Ceará</p>
                                     </div>
-                                    <!--<ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">about</a></li>
-                                        <li><a href="#">services</a></li>
-                                        <li><a href="#">portfolio</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Our Services</a></li>
-                                        <li><a href="#">Expert Team</a></li>
-                                        <li><a href="#">Contact us</a></li>
-                                        <li><a href="#">Latest News</a></li>
-                                    </ul>-->
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                                <!--<div class="footer-widget">
+                                <div class="footer-widget">
                                     <div class="footer-widget-heading">
-                                        <h3>Subscribe</h3>
+                                            <h3>Navegue</h3>
                                     </div>
-                                    <div class="footer-text mb-25">
-                                        <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                                    </div>
-                                    <div class="subscribe-form">
-                                        <form action="#">
-                                            <input type="text" placeholder="Email Address">
-                                            <button><i class="fab fa-telegram-plane"></i></button>
-                                        </form>
-                                    </div>
-                                </div>-->
+                                    <ul>
+                                        <li><a href="#section1" class="page-scroll">Quem Somos</a></li>
+                                        <li><a href="#section2" class="page-scroll">Falência</a></li>
+                                        <li><a href="#section3" class="page-scroll">Recuperação Judicial</a></li>
+                                        <li><a href="#section4" class="page-scroll">Credores</a></li>
+                                        <li><a href="#section5" class="page-scroll">Links Úteis</a></li>
+                                        <li><a href="#section6" class="page-scroll">Contato</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -590,20 +671,10 @@
                 <div class="copyright-area">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                                <!--<div class="copyright-text">
-                                    <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                                <div class="footer-menu">
-                                    <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Terms</a></li>
-                                        <li><a href="#">Privacy</a></li>
-                                        <li><a href="#">Policy</a></li>
-                                        <li><a href="#">Contact</a></li>-->
-                                    </ul>
+                            <div class="col-xl-12 text-center">
+                                <div class="copyright-text">
+                                    <p>ANDRADE ADMINISTRAÇÃO JUDICIAL LTDA &nbsp;|&nbsp; CNPJ 40.255.448/0001-70</p>
+                                    <p>Copyright &copy; 2026 Andrade Administração Judicial. Todos os direitos reservados.</p>
                                 </div>
                             </div>
                         </div>

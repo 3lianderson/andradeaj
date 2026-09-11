@@ -1,0 +1,9 @@
+upload to S3:
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+
+  script:
+   - aws configure set region us-east-1
+   - touch foo.txt
+   - aws s3 cp home.html s3://$S3_BUCKET/home.html
